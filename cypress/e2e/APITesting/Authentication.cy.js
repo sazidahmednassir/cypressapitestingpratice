@@ -65,8 +65,9 @@ describe("Basic Auth ", ()=>{
 
        cy.request({
         method:"GET",
-        url:'https://api.openweathermap.org/data/2.5/weather?q=Dhaka',
+        url:'https://api.openweathermap.org/data/2.5/weather',
         qs:{
+          q:'Dhaka',
           appid:'5bda770012e627ac4719e8d8f801819d'
         }
 
